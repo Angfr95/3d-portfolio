@@ -23,7 +23,7 @@ const experiences = [
   {
     title: "Developer Full stack",
     company_name: "Student",
-    date: "2022 - 2025",
+    date: "2022 - 2026",
     details: [
       "Learning by mylself coding with numerous tutorial and create many online website ",
       "<span style='color: white;'>Designed and developed innovative</span> AI applications and interactive websites.",
@@ -33,7 +33,7 @@ const experiences = [
   {
     title: "Self Employment",
     company_name: "Myself",
-    date: "2021 - 2024",
+    date: "2021 - 2026",
     details: [
       "Seller on partnership with <span style='color: white;'>Amazon</span> on segment of <span style='color: white;'>Games and toys</span>.",
       "Find New product and increase sales as well as <span style='color: white;'>inventory management and cash</span>, ensuring high availability for critical business applications.",
@@ -77,7 +77,8 @@ const portfolio = [
     description:
       "There you can see my CV, I have 2 master degree one in accounting and the other in research",
     image: cvcapture,
-    lien: "https://drive.google.com/file/d/1Zh5UnnwORJuk1CDXiKgV3CPvu5fYhXuC/view?usp=sharing",
+    lien: "/CV_Fernandez_Loic_General.pdf",
+    download: true,
   },
 ];
 

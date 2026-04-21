@@ -7,7 +7,7 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({ index, name, description, image, lien }) => {
+const ProjectCard = ({ index, name, description, image, lien, download }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
     threshold: 0.1,
@@ -36,6 +36,7 @@ const ProjectCard = ({ index, name, description, image, lien }) => {
           href={lien}
           target="_blank"
           rel="noopener noreferrer"
+          download={download || undefined}
           className="w-full md:w-3/5"
         >
           <img
