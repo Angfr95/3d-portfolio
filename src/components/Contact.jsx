@@ -32,9 +32,9 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    const SERVICE_ID = "service_8qme53q"; // Remplacez par votre ID de service EmailJS
-    const TEMPLATE_ID = "template_g1aools"; // Remplacez par votre ID de modèle EmailJS
-    const USER_ID = "ajjBbiEx-igK3yhgN"; // Remplacez par votre ID d'utilisateur EmailJS
+    const SERVICE_ID = "service_plp7f3j";
+    const TEMPLATE_ID = "template_3luvdds";
+    const USER_ID = "8QjNcYqOTVF3nV5G6";
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, USER_ID).then(
       (result) => {
