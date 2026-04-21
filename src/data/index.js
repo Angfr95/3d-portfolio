@@ -21,23 +21,22 @@ export const navLinks = [
 
 const experiences = [
   {
-    title: "Developer Full stack",
-    company_name: "Student",
-    date: "2022 - 2026",
+    title: "Developer Full Stack",
+    company_name: "Self-taught",
+    date: "2022 - present",
     details: [
-      "Learning by mylself coding with numerous tutorial and create many online website ",
-      "<span style='color: white;'>Designed and developed innovative</span> AI applications and interactive websites.",
-      "<span style='color: white;'>Managed full project lifecycle</span> from concept to deployment in successful and timely project completions.",
+      "Architected and shipped <span style='color: white;'>Ultizion</span>, a production e-commerce platform (Node.js, TypeScript, PostgreSQL, React).",
+      "Contributing bug fixes to <span style='color: white;'>OpenClaw</span>, an active open-source TypeScript codebase.",
     ],
   },
   {
     title: "Self Employment",
     company_name: "Myself",
-    date: "2021 - 2026",
+    date: "2021 - present",
     details: [
-      "Seller on partnership with <span style='color: white;'>Amazon</span> on segment of <span style='color: white;'>Games and toys</span>.",
-      "Find New product and increase sales as well as <span style='color: white;'>inventory management and cash</span>, ensuring high availability for critical business applications.",
-      "<span style='color: white;'>Collaborated with a team</span> to design and implement marketing strategies.",
+      "Approved <span style='color: white;'>Amazon</span> seller and <span style='color: white;'>TikTok Shop</span> partner in the <span style='color: white;'>Games & Toys</span> category.",
+      "Identified new product opportunities and managed <span style='color: white;'>inventory and cash flow</span>.",
+      "<span style='color: white;'>Collaborated with a team</span> to design and execute marketing strategies.",
     ],
   },
   {
