@@ -1,4 +1,4 @@
-import { algorithms, devnotes, airbnb, cvcapture } from "../assets";
+import { algorithms, cvcapture, ultizion } from "../assets";
 
 export const navLinks = [
   {
@@ -52,18 +52,11 @@ const experiences = [
 
 const portfolio = [
   {
-    name: "Airbnb-Clone",
+    name: "Ultizion",
     description:
-      "An Airbnb clone using next.js and django with an postgressql for data",
-    image: airbnb,
-    lien: "https://airbnb-clone-g42s.vercel.app/",
-  },
-  {
-    name: "Dev Notes",
-    description:
-      "Inside the app where you can see an basic crud application with an Auth autentification",
-    image: devnotes,
-    lien: "https://task2-0.vercel.app/signin",
+      "Production e-commerce platform for trading card games. Built solo: 14-module Node.js/TypeScript backend, Redis price-alert system, multilingual React frontend with CI/CD and sub-2s load times.",
+    image: ultizion,
+    lien: "https://ultizion.com",
   },
   {
     name: "Weather App",

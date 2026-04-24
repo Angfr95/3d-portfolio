@@ -3,8 +3,7 @@ import logo from "./logo.svg";
 import menu from "./menu.svg";
 
 import algorithms from "./algorithms.png";
-import devnotes from "./devnotes.png";
-import airbnb from "./airbnb.png";
 import cvcapture from "./cvcapture.png";
+import ultizion from "./ultizion.png";
 
-export { algorithms, close, devnotes, logo, menu, airbnb, cvcapture };
+export { algorithms, close, logo, menu, cvcapture, ultizion };
