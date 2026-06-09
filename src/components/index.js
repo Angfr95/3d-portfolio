@@ -1,4 +1,5 @@
 import Contact from "./Contact";
+import CVSection from "./CVSection";
 import Experience from "./Experience";
 import Hero from "./Hero";
 import CanvasLoader from "./Loader";
@@ -9,6 +10,6 @@ import ProjectDetail from "./ProjectDetail";
 import SpacemanCanvas from "./Spaceman";
 
 export {
-    CanvasLoader, Contact, Experience, Hero, Navbar, Portfolio, Position, ProjectDetail, SpacemanCanvas
+    CanvasLoader, Contact, CVSection, Experience, Hero, Navbar, Portfolio, Position, ProjectDetail, SpacemanCanvas
 };
 

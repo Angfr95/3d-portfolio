@@ -1,4 +1,4 @@
-import { aeropath, cvcapture, ultizion } from "../assets";
+import { aeropath, airbnb, cvcapture, devnotes, meteo, ultizion } from "../assets";
 
 export const navLinks = [
   {
@@ -12,6 +12,10 @@ export const navLinks = [
   {
     id: "experience",
     title: "Experience",
+  },
+  {
+    id: "cv",
+    title: "CV",
   },
   {
     id: "contact",
@@ -70,6 +74,37 @@ const experiences = [
 
 const portfolio = [
   {
+    name: "Aeropath",
+    slug: "aeropath",
+    description: "Aviation theory training PWA for PPL/LAPL/ATPL. Built solo: Go/Gin API with PostgreSQL, Redis, NATS event streaming, ClickHouse analytics, WebSocket notifications, and full EKS deployment on AWS.",
+    image: aeropath,
+    lien: "https://aeropath.ultizion.com",
+    technologies: ["Go", "Gin", "PostgreSQL", "Redis", "NATS", "ClickHouse", "Kubernetes", "WebSocket", "AWS"],
+    github: "https://github.com/Angfr95",
+    sections: [
+      {
+        emoji: "🎯",
+        titre: "Objectifs du projet",
+        contenu: "Développer une plateforme d'apprentissage de la théorie aéronautique (PPL, LAPL, ATPL) avec une architecture événementielle performante. L'objectif était de fournir un outil de formation complet avec suivi en temps réel et analytics avancées.",
+      },
+      {
+        emoji: "⚙️",
+        titre: "Fonctionnalités principales",
+        contenu: "Modules de cours théoriques interactifs • Système de quiz et examens blancs • Suivi de progression en temps réel (WebSocket) • Analytics détaillées des performances (ClickHouse) • Notifications événementielles (NATS JetStream) • Progressive Web App (PWA) pour utilisation hors-ligne.",
+      },
+      {
+        emoji: "🧱",
+        titre: "Architecture & Concepts utilisés",
+        contenu: "API Go/Gin haute performance • Base PostgreSQL pour les données relationnelles • Cache Redis pour les sessions • NATS JetStream pour l'event streaming • Entrepôt de données ClickHouse pour l'analytique • Déploiement sur AWS EKS (Kubernetes) • Monitoring avec Prometheus/Grafana.",
+      },
+      {
+        emoji: "🧠",
+        titre: "Ce que j'ai appris",
+        contenu: "La conception d'architectures événementielles avec NATS • L'utilisation de Go pour des APIs performantes • L'orchestration Kubernetes sur AWS • La modélisation de données analytiques avec ClickHouse • La gestion du real-time avec WebSockets.",
+      },
+    ],
+  },
+  {
     name: "Ultizion",
     slug: "ultizion",
     description:
@@ -102,66 +137,98 @@ const portfolio = [
     ],
   },
   {
-    name: "Aeropath",
-    slug: "aeropath",
-    description: "Aviation theory training PWA for PPL/LAPL/ATPL. Built solo: Go/Gin API with PostgreSQL, Redis, NATS event streaming, ClickHouse analytics, WebSocket notifications, and full EKS deployment on AWS.",
-    image: aeropath,
-    lien: "https://aeropath.ultizion.com",
-    technologies: ["Go", "Gin", "PostgreSQL", "Redis", "NATS", "ClickHouse", "Kubernetes", "WebSocket", "AWS"],
-    github: "https://github.com/Angfr95",
+    name: "Airbnb Clone",
+    slug: "airbnb",
+    description:
+      "Clone de l'interface Airbnb avec calendrier de disponibilité, carte interactive, et filtres de recherche avancés. Reproduction fidèle du design et des interactions.",
+    image: airbnb,
+    lien: "https://angfr95.github.io/airbnb-clone",
+    technologies: ["React", "Next.js", "TailwindCSS", "Mapbox", "Date Picker"],
+    github: "https://github.com/Angfr95/airbnb-clone",
     sections: [
       {
         emoji: "🎯",
         titre: "Objectifs du projet",
-        contenu: "Développer une plateforme d'apprentissage de la théorie aéronautique (PPL, LAPL, ATPL) avec une architecture événementielle performante. L'objectif était de fournir un outil de formation complet avec suivi en temps réel et analytics avancées.",
+        contenu: "Reproduire l'interface et les interactions principales d'Airbnb pour maîtriser les techniques de layout avancées, la gestion de calendrier, et l'intégration de cartes interactives. L'accent était mis sur la fidélité du design et la fluidité des animations.",
       },
       {
         emoji: "⚙️",
         titre: "Fonctionnalités principales",
-        contenu: "Modules de cours théoriques interactifs • Système de quiz et examens blancs • Suivi de progression en temps réel (WebSocket) • Analytics détaillées des performances (ClickHouse) • Notifications événementielles (NATS JetStream) • Progressive Web App (PWA) pour utilisation hors-ligne.",
+        contenu: "Recherche de logements avec filtres (date, prix, type) • Calendrier de disponibilité interactif • Carte Mapbox avec marqueurs des logements • Galerie d'images avec carrousel • Design responsive fidèle à Airbnb • Animations de transition fluides.",
       },
       {
         emoji: "🧱",
         titre: "Architecture & Concepts utilisés",
-        contenu: "API Go/Gin haute performance • Base PostgreSQL pour les données relationnelles • Cache Redis pour les sessions • NATS JetStream pour l'event streaming • Entrepôt de données ClickHouse pour l'analytique • Déploiement sur AWS EKS (Kubernetes) • Monitoring avec Prometheus/Grafana.",
+        contenu: "Next.js avec Server-Side Rendering • TailwindCSS pour le styling utilitaire • Mapbox GL JS pour la carte interactive • React Date Picker pour le calendrier • Composants réutilisables (Card, Header, SearchBar) • Déploiement Vercel.",
       },
       {
         emoji: "🧠",
         titre: "Ce que j'ai appris",
-        contenu: "La conception d'architectures événementielles avec NATS • L'utilisation de Go pour des APIs performantes • L'orchestration Kubernetes sur AWS • La modélisation de données analytiques avec ClickHouse • La gestion du real-time avec WebSockets.",
+        contenu: "Le Server-Side Rendering avec Next.js • L'intégration de cartes interactives (Mapbox) • Les layouts complexes avec TailwindCSS • La gestion de dates et calendriers en React • Le pixel-perfect design en reproduisant une interface existante.",
       },
     ],
   },
   {
-    name: "CV",
-    slug: "cv",
+    name: "DevNotes",
+    slug: "devnotes",
     description:
-      "Full-Stack Engineer and Independent Consultant with a dual Master's in Audit & Management, specializing in the end-to-end architecture of high-throughput distributed systems and production-ready LLM pipelines.",
-    image: cvcapture,
-    lien: "/CV_Fernandez_Loic.pdf",
-    download: true,
-    technologies: ["Full-Stack", "Go", "TypeScript", "React", "AWS", "Kubernetes", "PostgreSQL", "LLM"],
-    github: "https://github.com/Angfr95",
+      "Application de prise de notes orientée développeur avec coloration syntaxique, catégorisation par langage, et sauvegarde locale. Interface minimaliste et efficace.",
+    image: devnotes,
+    lien: "https://angfr95.github.io/devnotes",
+    technologies: ["React", "JavaScript", "LocalStorage", "CSS3", "CodeMirror"],
+    github: "https://github.com/Angfr95/devnotes",
     sections: [
       {
         emoji: "🎯",
-        titre: "Profil professionnel",
-        contenu: "Full-Stack Engineer et Consultant Indépendant avec un double Master en Audit & Management. Spécialisé dans l'architecture de systèmes distribués à haut débit et le déploiement de pipelines LLM en production.",
-      },
-      {
-        emoji: "🧱",
-        titre: "Compétences clés",
-        contenu: "Backend : Go, Node.js, TypeScript, Python • Frontend : React, Next.js, TailwindCSS • Bases de données : PostgreSQL, Redis, ClickHouse • Cloud & DevOps : AWS, Kubernetes, Docker, CI/CD • Messaging : NATS, gRPC, WebSocket • IA : Intégration LLM (Anthropic/OpenAI), RAG pipelines.",
+        titre: "Objectifs du projet",
+        contenu: "Développer un outil de prise de notes pensé pour les développeurs, avec coloration syntaxique et organisation par langage de programmation. L'objectif était de créer un outil utile au quotidien avec une expérience utilisateur fluide.",
       },
       {
         emoji: "⚙️",
-        titre: "Domaines d'expertise",
-        contenu: "Architecture de systèmes distribués • Event-driven architectures • Pipelines LLM en production • Sécurité applicative (blackbox/whitebox) • Plateformes e-commerce • Formation et ed-tech.",
+        titre: "Fonctionnalités principales",
+        contenu: "Éditeur avec coloration syntaxique (JavaScript, Python, HTML, CSS...) • Catégorisation des notes par langage • Sauvegarde automatique en LocalStorage • Copie rapide du code • Interface minimaliste et dark mode • Recherche dans les notes.",
+      },
+      {
+        emoji: "🧱",
+        titre: "Architecture & Concepts utilisés",
+        contenu: "React avec Context API pour la gestion d'état • CodeMirror pour l'éditeur avec coloration syntaxique • LocalStorage pour la persistance des données • CSS Modules pour le styling • Architecture modulaire par composants.",
       },
       {
         emoji: "🧠",
-        titre: "Philosophie de travail",
-        contenu: "J'accorde une importance particulière à la qualité du code, à la documentation et aux tests. Chaque projet est une occasion d'apprendre et d'améliorer mes compétences. Je crois en une approche pragmatique : choisir le bon outil pour le bon problème, sans sur-ingénierie.",
+        titre: "Ce que j'ai appris",
+        contenu: "L'intégration de bibliothèques d'édition de code (CodeMirror) • La persistance locale avec LocalStorage • La gestion d'état complexe avec Context API • Le design d'interfaces minimalistes et fonctionnelles.",
+      },
+    ],
+  },
+  {
+    name: "Météo",
+    slug: "meteo",
+    description:
+      "Application météo interactive avec géolocalisation, prévisions sur 7 jours, et interface dynamique selon les conditions météo. Construite avec React et une API météo REST.",
+    image: meteo,
+    lien: "https://angfr95.github.io/meteo-app",
+    technologies: ["React", "JavaScript", "CSS3", "API REST", "Geolocation"],
+    github: "https://github.com/Angfr95/meteo-app",
+    sections: [
+      {
+        emoji: "🎯",
+        titre: "Objectifs du projet",
+        contenu: "Créer une application météo interactive et responsive, avec géolocalisation automatique et affichage dynamique des conditions météorologiques. L'objectif était de maîtriser la consommation d'API REST et les interfaces adaptatives.",
+      },
+      {
+        emoji: "⚙️",
+        titre: "Fonctionnalités principales",
+        contenu: "Géolocalisation automatique de l'utilisateur • Prévisions sur 7 jours • Recherche de ville • Interface dynamique (fond changeant selon la météo) • Affichage des détails : humidité, vent, pression • Design responsive.",
+      },
+      {
+        emoji: "🧱",
+        titre: "Architecture & Concepts utilisés",
+        contenu: "React avec Hooks (useState, useEffect) • Consommation d'API REST (OpenWeatherMap) • Geolocation API navigateur • CSS moderne avec dégradés dynamiques • Déploiement GitHub Pages.",
+      },
+      {
+        emoji: "🧠",
+        titre: "Ce que j'ai appris",
+        contenu: "La gestion des appels API asynchrones avec React • Le geolocation API • Les interfaces adaptatives basées sur les données • Le déploiement sur GitHub Pages • L'optimisation des performances de rendu.",
       },
     ],
   },

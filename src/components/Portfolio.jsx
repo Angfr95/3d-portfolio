@@ -83,12 +83,6 @@ const ProjectCard = ({ index, name, description, image, lien, download, slug, te
 
         {/* Action Buttons */}
         <div className={`flex flex-wrap gap-3 mt-5 ${isEven ? "justify-start" : "md:justify-end"}`}>
-          <button
-            onClick={() => navigate(`/project/${slug}`)}
-            className="px-5 py-2 bg-tertiary text-white text-sm font-medium rounded-lg hover:bg-opacity-80 transition"
-          >
-            Voir détails
-          </button>
           {lien && (
             <a
               href={lien}
@@ -100,6 +94,12 @@ const ProjectCard = ({ index, name, description, image, lien, download, slug, te
               {download ? "Télécharger" : "Visiter"}
             </a>
           )}
+          <button
+            onClick={() => navigate(`/project/${slug}`)}
+            className="px-5 py-2 bg-tertiary text-white text-sm font-medium rounded-lg hover:bg-opacity-80 transition"
+          >
+            Voir détails
+          </button>
         </div>
       </div>
     </motion.div>

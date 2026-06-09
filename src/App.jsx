@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Contact, Experience, Hero, Navbar, Portfolio, ProjectDetail } from "./components";
+import { Contact, CVSection, Experience, Hero, Navbar, Portfolio, ProjectDetail } from "./components";
 
 const HomePage = ({ wrapperRef }) => (
   <>
@@ -14,6 +14,9 @@ const HomePage = ({ wrapperRef }) => (
       </div>
       <div id="experience" className='relative z-30 bg-primary'>
         <Experience />
+      </div>
+      <div id="cv" className='relative z-30 bg-primary'>
+        <CVSection />
       </div>
       <div id="contact" className='relative z-30 bg-primary'>
         <Contact />
