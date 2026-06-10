@@ -4,9 +4,12 @@ import menu from "./menu.svg";
 
 import aeropath from "./aeropath.png";
 import airbnb from "./airbnb.png";
+import clairon from "./clairon.png";
 import cvcapture from "./cvcapture.png";
 import devnotes from "./devnotes.png";
+import finder from "./finder.png";
 import meteo from "./meteo.png";
+import openclaw from "./openclaw.png";
 import ultizion from "./ultizion.png";
 
-export { aeropath, airbnb, close, cvcapture, devnotes, logo, menu, meteo, ultizion };
+export { aeropath, airbnb, clairon, close, cvcapture, devnotes, finder, logo, menu, meteo, openclaw, ultizion };

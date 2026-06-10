@@ -1,4 +1,4 @@
-import { aeropath, airbnb, cvcapture, devnotes, meteo, ultizion } from "../assets";
+import { aeropath, airbnb, clairon, cvcapture, devnotes, finder, meteo, openclaw, ultizion } from "../assets";
 
 export const navLinks = [
   {
@@ -62,6 +62,17 @@ const experiences = [
     ],
   },
   {
+    title: "Full-Stack Software Engineer (Contractor)",
+    company_name: "FMR Boutique de Carte",
+    date: "2021 - 2024",
+    details: [
+      "<span style='color: white;'>Stock Synchronization:</span> Developed straightforward automation scripts in Node.js to track inventory levels and push automated stock updates between the central store database and marketplace endpoints (Amazon, eBay).",
+      "<span style='color: white;'>Data Ingestion:</span> Wrote lightweight TypeScript functions to fetch daily product counts, parsing basic JSON payloads to ensure stock alignment across platforms.",
+      "<span style='color: white;'>Dashboard Maintenance:</span> Handled simple front-end bug fixes, layout adjustments, and product table updates in React for the internal merchant panel.",
+      "<span style='color: white;'>Remote Workflows:</span> Maintained daily asynchronous communication via Slack, updated task status in Asana, and pushed hotfixes through GitHub Actions.",
+    ],
+  },
+  {
     title: "External Auditor",
     company_name: "MoMa — Montpellier Management",
     date: "2019 - 2021",
@@ -105,6 +116,38 @@ const portfolio = [
     ],
   },
   {
+    name: "OpenClaw",
+    slug: "openclaw",
+    description:
+      "Active open-source contributor to OpenClaw, a TypeScript codebase with 80k+ stars. Fixing bugs, adding features, and improving the architecture of this widely-used project.",
+    image: openclaw,
+    lien: "https://github.com/Angfr95?tab=repositories&q=openclaw",
+    technologies: ["TypeScript", "Open Source", "Git", "GitHub", "Code Review"],
+    github: "https://github.com/Angfr95",
+    sections: [
+      {
+        emoji: "🎯",
+        titre: "Project Goals",
+        contenu: "Contribute meaningfully to a large-scale open-source TypeScript project with 80k+ GitHub stars. The goal is to fix real bugs, implement requested features, and improve the codebase's overall quality through rigorous code reviews and architectural discussions.",
+      },
+      {
+        emoji: "⚙️",
+        titre: "Core Contributions",
+        contenu: "Bug fixes across the core codebase • Feature implementations addressing community issues • Code review participation • TypeScript type improvements • Documentation updates • Performance optimizations.",
+      },
+      {
+        emoji: "🧱",
+        titre: "Architecture & Concepts",
+        contenu: "Large-scale TypeScript monorepo • Structured contribution workflow (fork, branch, PR, review) • Extensive test suite • CI/CD pipelines • Semantic versioning • Active community governance.",
+      },
+      {
+        emoji: "🧠",
+        titre: "What I learned",
+        contenu: "Contributing to a project with 80k+ stars taught me that writing clean code isn't the hard part — it's learning to defend your design decisions in a public PR review while 50 people watch. • I learned that the difference between a good contributor and a great one isn't technical skill — it's reading the room: understanding the maintainers' vision, respecting the existing style, and knowing when a new feature doesn't belong in the core. • Debugging a TypeScript issue in a codebase this size forced me to read the source code of libraries I previously treated as black boxes — the type error wasn't in my code, it was in a DefinitelyTyped definition I had the audacity to question.",
+      },
+    ],
+  },
+  {
     name: "Ultizion",
     slug: "ultizion",
     description:
@@ -137,6 +180,38 @@ const portfolio = [
     ],
   },
   {
+    name: "FINDER",
+    slug: "finder",
+    description:
+      "Automated web security auditor covering 30+ blackbox and 11+ whitebox modules. Built solo in Python: asynchronous scan engine, SSRF multi-cloud detection, OOB callback server, LLM triage pipeline, and professional PDF reporting. No cloud dependencies.",
+    image: finder,
+    lien: "https://github.com/Angfr95?tab=repositories&q=finder",
+    technologies: ["Python", "Asyncio", "LLM", "Docker", "Nuclei", "PDF", "OOB", "Auth", "NLP"],
+    github: "https://github.com/Angfr95",
+    sections: [
+      {
+        emoji: "🎯",
+        titre: "Project Goals",
+        contenu: "Build a comprehensive, standalone web security auditor that requires no cloud SDKs or API keys to function. The goal was to create a professional tool capable of both live blackbox scanning of web applications and whitebox source code audits, with an AI-powered LLM triage pipeline for intelligent vulnerability scoring.",
+      },
+      {
+        emoji: "⚙️",
+        titre: "Core Features",
+        contenu: "30+ blackbox modules: WAF detection, SQLi (error/blind/OOB), SSRF (10 cloud providers), XXE, SSTI, JWT, GraphQL, CORS, prototype pollution, open redirect, path traversal, WebSocket injection • 11+ whitebox modules: static analysis, dependency CVEs, IDOR detection, race conditions, secret leaks, LLM code review • Asynchronous scan engine with rate limiting and jitter • OOB callback server (HTTP + DNS) for blind injection confirmation • Professional PDF report generation • Web UI built-in.",
+      },
+      {
+        emoji: "🧱",
+        titre: "Architecture & Concepts",
+        contenu: "Python async/await with aiohttp for non-blocking HTTP scanning • Modular plugin architecture (blackbox/, whitebox/, llm/, nuclei/) • SSRF detection across AWS, GCP, Azure, DigitalOcean, OVH, Hetzner, Alibaba, Oracle — no SDK dependencies • LLM triage pipeline using Anthropic/OpenAI for intelligent vulnerability scoring and agentic scan orchestration • OOB server handling both DNS and HTTP callbacks for blind injection confirmation • Docker deployment • Web UI with real-time scan progress.",
+      },
+      {
+        emoji: "🧠",
+        titre: "What I learned",
+        contenu: "Building an async security scanner taught me that raw speed is dangerous — without rate limiting and jitter, you're not just polite, you're invisible. A scanner that hits too fast gets WAF-blocked in 3 seconds. • The OOB callback server was the hardest technical challenge: I had to run a DNS server that listens for specific query patterns, correlate them back to scan sessions, and distinguish legitimate callbacks from background noise — all without relying on any cloud infrastructure. • The LLM triage pipeline was deceptively complex: the first version scored every finding independently, ignoring context — a reflected XSS in a 404 page and a stored XSS in the admin panel got the same score. Teaching the LLM to understand exploitability context was more valuable than any feature I shipped.",
+      },
+    ],
+  },
+  {
     name: "Airbnb Clone",
     slug: "airbnb",
     description:
@@ -159,7 +234,7 @@ const portfolio = [
       {
         emoji: "🧱",
         titre: "Architecture & Concepts",
-        contenu: "Next.js with Server-Side Rendering • TailwindCSS for utility-first styling • Mapbox GL JS for interactive maps • React Date Picker for the calendar • Reusable components (Card, Header, SearchBar) • Vercel deployment.",
+        contenu: "Next.js with Server-Side Rendering • TailwindCSS for utility-first styling • Mapbox GL JS for interactive maps • React Date Picker for the calendar • Reusable components (Card, Header, SearchBar) • GCP deployment (Cloud Run).",
       },
       {
         emoji: "🧠",
@@ -169,34 +244,51 @@ const portfolio = [
     ],
   },
   {
+    name: "Clairon",
+    slug: "clairon",
+    description:
+      "AI-powered demo for a job application: FastAPI backend with DeepSeek LLM and SerpAPI (Google News) to fetch and summarize the latest news about political figures from the last 48 hours. Rejects queries about non-political figures.",
+    image: clairon,
+    lien: "https://github.com/Angfr95?tab=repositories&q=clairon",
+    technologies: ["FastAPI", "Python", "DeepSeek", "SerpAPI", "React", "TypeScript", "TailwindCSS", "Docker"],
+    github: "https://github.com/Angfr95",
+    sections: [
+      {
+        emoji: "🎯",
+        titre: "Project Goals",
+        contenu: "Build a demo for a job application that leverages AI to retrieve and summarize information about political figures from the last 48 hours. The system must verify if the queried entity is a legitimate political figure via DeepSeek LLM, reject irrelevant queries, and fetch real-time news via SerpAPI (Google News).",
+      },
+      {
+        emoji: "⚙️",
+        titre: "Core Features",
+        contenu: "AI-powered validation — DeepSeek LLM determines if the queried person is a political figure • Real-time news retrieval from SerpAPI/Google News (last 2 days) • LLM-based summarization with source citations • Clean React + TypeScript frontend with TailwindCSS • Dockerized full-stack deployment • Async API with FastAPI and aiohttp.",
+      },
+      {
+        emoji: "🧱",
+        titre: "Architecture & Concepts",
+        contenu: "Backend: FastAPI (Python) with async endpoints • LLM: DeepSeek API (deepseek-chat) for query classification and summarization • News: SerpAPI (Google News engine) for real-time article retrieval • Prompt engineering for political figure detection and rejection logic • Frontend: React 19 + TypeScript + Vite + TailwindCSS • Docker Compose for full-stack orchestration • Async HTTP with aiohttp for non-blocking API calls.",
+      },
+      {
+        emoji: "🧠",
+        titre: "What I learned",
+        contenu: "Building an AI agent that decides what to reject vs accept taught me that prompt engineering is fragile — the first version of the political figure filter accepted 'Emmanuel Macron' but also 'Emmanuel Macron's dog' because I forgot to constrain the reasoning scope. • SerpAPI's Google News results are wildly inconsistent — same query at 9 AM vs 3 PM yields completely different articles, which means the system's output changes hour to hour. • FastAPI's async model with aiohttp was elegant, but chaining DeepSeek (120s timeout) after SerpAPI (30s timeout) meant the frontend had to handle a 2.5-minute worst-case wait — a UX problem that has nothing to do with code quality.",
+      },
+    ],
+  },
+  {
     name: "DevNotes",
     slug: "devnotes",
     description:
-      "Developer-oriented note-taking app with syntax highlighting, language-based categorization, and local storage. Minimalist and efficient interface.",
+      "Mini projet : note-taking app avec syntax highlighting, local storage et organisation par langage.",
     image: devnotes,
     lien: "https://angfr95.github.io/devnotes",
     technologies: ["React", "JavaScript", "LocalStorage", "CSS3", "CodeMirror"],
     github: "https://github.com/Angfr95/devnotes",
     sections: [
       {
-        emoji: "🎯",
-        titre: "Project Goals",
-        contenu: "Build a note-taking tool designed for developers, with syntax highlighting and organization by programming language. The goal was to create a genuinely useful daily tool with a smooth user experience.",
-      },
-      {
-        emoji: "⚙️",
-        titre: "Core Features",
-        contenu: "Code editor with syntax highlighting (JavaScript, Python, HTML, CSS...) • Notes categorized by language • Auto-save to LocalStorage • Quick code copy • Minimalist dark-mode interface • Full-text search across notes.",
-      },
-      {
-        emoji: "🧱",
-        titre: "Architecture & Concepts",
-        contenu: "React with Context API for state management • CodeMirror for the syntax-highlighted editor • LocalStorage for data persistence • CSS Modules for styling • Modular component architecture.",
-      },
-      {
-        emoji: "🧠",
-        titre: "What I learned",
-        contenu: "Integrating CodeMirror showed me that using a library is one thing, understanding its internal model is another — I spent more time debugging state conflicts between React and CodeMirror than implementing the features themselves. • LocalStorage persistence seems simple until the user hits the 5 MB limit — I discovered the browser silently evicts your data without warning, and a JSON export fallback isn't an option, it's an obligation.",
+        emoji: "📝",
+        titre: "Mini Project",
+        contenu: "A simple note-taking app for developers built with React, CodeMirror for syntax highlighting, and LocalStorage for persistence. One of my first React projects.",
       },
     ],
   },
@@ -204,31 +296,16 @@ const portfolio = [
     name: "Météo",
     slug: "meteo",
     description:
-      "Interactive weather",
+      "Mini projet : app météo interactive avec géolocalisation et fond dynamique.",
     image: meteo,
     lien: "https://angfr95.github.io/meteo-app",
     technologies: ["React", "JavaScript", "CSS3", "API REST", "Geolocation"],
     github: "https://github.com/Angfr95/meteo-app",
     sections: [
       {
-        emoji: "🎯",
-        titre: "Project Goals",
-        contenu: "Create an interactive, responsive weather app with automatic geolocation and dynamic weather-based UI. The goal was to master REST API consumption and adaptive interfaces.",
-      },
-      {
-        emoji: "⚙️",
-        titre: "Core Features",
-        contenu: "Automatic user geolocation • 7-day weather forecast • City search • Dynamic background that changes with weather conditions • Detailed display: humidity, wind, pressure • Fully responsive design.",
-      },
-      {
-        emoji: "🧱",
-        titre: "Architecture & Concepts",
-        contenu: "React with Hooks (useState, useEffect) • REST API consumption (OpenWeatherMap) • Browser Geolocation API • Modern CSS with dynamic gradients • GitHub Pages deployment.",
-      },
-      {
-        emoji: "🧠",
-        titre: "What I learned",
-        contenu: "The weather API taught me async the hard way: a call that times out after 30 seconds is a user closing the tab. Handling a promise means handling its failure too — skeleton UI isn't cosmetic, it's the bare minimum to keep the user engaged. • The browser geolocation failing because the user said 'no' forced me to design a fallback that doesn't punish people for protecting their privacy — obvious in hindsight, but easy to forget when coding locally.",
+        emoji: "📝",
+        titre: "Mini Project",
+        contenu: "A simple weather app consuming OpenWeatherMap API with automatic geolocation and dynamic backgrounds. One of my first React projects.",
       },
     ],
   },
