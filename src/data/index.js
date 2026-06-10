@@ -25,6 +25,14 @@ export const navLinks = [
 
 const experiences = [
   {
+    title: "Open Source Contributor",
+    company_name: "Freelance",
+    date: "2026 - Present",
+    details: [
+      "Contributing bug fixes, features and improvements to multiple <span style='color: white;'>open-source projects</span> including <span style='color: white;'>OpenClaw</span>, a TypeScript codebase with 80k+ stars.",
+    ],
+  },
+  {
     title: "Full-Stack Engineer",
     company_name: "AeroPath — Aviation Association",
     date: "2024 - Present",
@@ -36,29 +44,10 @@ const experiences = [
   {
     title: "Full-Stack Engineer",
     company_name: "FINDER — Private Company",
-    date: "2023 - Present",
+    date: "2024 - 2025",
     details: [
       "Developed an automated web security auditor covering <span style='color: white;'>30+ blackbox</span> and <span style='color: white;'>11+ whitebox</span> modules.",
       "Integrated an <span style='color: white;'>LLM triage pipeline</span> (Anthropic/OpenAI) for intelligent vulnerability scoring and agentic scan orchestration.",
-    ],
-  },
-  {
-    title: "Full-Stack Engineer & Open Source Contributor",
-    company_name: "Freelance",
-    date: "2020 - Present",
-    details: [
-      "Architected and shipped <span style='color: white;'>Ultizion</span>, a production e-commerce platform (Node.js, TypeScript, PostgreSQL, Redis, React, AWS).",
-      "Contributing bug fixes and features to <span style='color: white;'>OpenClaw</span>, an active open-source TypeScript codebase with 80k+ stars.",
-    ],
-  },
-  {
-    title: "Co-Founder & E-commerce Operator",
-    company_name: "Ultizion",
-    date: "2021 - Present",
-    details: [
-      "Approved <span style='color: white;'>Amazon seller</span> and <span style='color: white;'>TikTok Shop partner</span> in the Games & Toys category.",
-      "Managed <span style='color: white;'>inventory and cash flow</span> across 500+ SKUs in collaboration with business partner.",
-      "Collaborated to design and execute <span style='color: white;'>multi-channel marketing strategies</span> across TikTok and Amazon.",
     ],
   },
   {
@@ -70,6 +59,16 @@ const experiences = [
       "<span style='color: white;'>Data Ingestion:</span> Wrote lightweight TypeScript functions to fetch daily product counts, parsing basic JSON payloads to ensure stock alignment across platforms.",
       "<span style='color: white;'>Dashboard Maintenance:</span> Handled simple front-end bug fixes, layout adjustments, and product table updates in React for the internal merchant panel.",
       "<span style='color: white;'>Remote Workflows:</span> Maintained daily asynchronous communication via Slack, updated task status in Asana, and pushed hotfixes through GitHub Actions.",
+    ],
+  },
+  {
+    title: "Co-Founder & E-commerce Operator",
+    company_name: "Ultizion",
+    date: "2021 - Present",
+    details: [
+      "Approved <span style='color: white;'>Amazon seller</span> and <span style='color: white;'>TikTok Shop partner</span> in the Games & Toys category.",
+      "Managed <span style='color: white;'>inventory and cash flow</span> across 500+ SKUs in collaboration with business partner.",
+      "Collaborated to design and execute <span style='color: white;'>multi-channel marketing strategies</span> across TikTok and Amazon.",
     ],
   },
   {
